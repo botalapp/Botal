@@ -1,1 +1,2 @@
-# Botal Privacy
+# Privacy Policy
+
