@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botal - 微信风格语音助手</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="wechat-container">
+        <!-- 微信头部 -->
+        <div class="wechat-header">
+            <div class="header-title">Botal</div>
+            <div class="header-subtitle">微信风格语音助手</div>
+        </div>
+        
+        <!-- 聊天内容区域 -->
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <p>欢迎使用Botal语音助手！</p>
+                <p>点击下方按钮开始录音，再次点击停止录音并发送</p>
+            </div>
+        </div>
+        
+        <!-- 微信底部输入区域 -->
+        <div class="wechat-footer">
+            <div class="voice-btn-container">
+                <button id="voiceBtn" class="voice-btn">
+                    <i data-feather="mic" class="voice-icon"></i>
+                    <span class="voice-text">点击 说话</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 录音状态提示 -->
+        <div class="recording-overlay" id="recordingOverlay" style="display: none;">
+            <div class="recording-indicator">
+                <div class="recording-animation"></div>
+                <p>录音中...再次点击停止</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
